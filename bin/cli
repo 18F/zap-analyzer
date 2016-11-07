@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative '../zap_analyzer.rb'
+
+def get_input_from_stdin
+  input = ""
+  while line = $stdin.gets
+    input << line
+  end
+
+  input
+end
+
+ZapAnalyzer.new(get_input_from_stdin).perform
