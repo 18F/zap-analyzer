@@ -4,10 +4,14 @@ class NullHandler
   end
 
   def perform
-    [error['id'], false, "CWE #{error['cweid']} not currently handled."]
+    [error['id'], false, "CWE #{cweid} not currently handled."]
   end
 
   private
+
+  def cweid
+    error['cweid']
+  end
 
   attr_reader :error
 end

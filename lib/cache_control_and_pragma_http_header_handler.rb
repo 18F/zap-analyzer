@@ -25,5 +25,9 @@ class CacheControlAndPragmaHTTPHeaderHandler
     end
   end
 
+  def cweid
+    error['cweid']
+  end
+
   attr_reader :error
 end

@@ -1,7 +1,6 @@
 class ReportWriter
-  def initialize(report, path = 'reports/report.txt')
+  def initialize(report)
     @report = report
-    @path = path
   end
 
   def perform
@@ -30,5 +29,5 @@ class ReportWriter
     output
   end
 
-  attr_reader :report, :path
+  attr_reader :report
 end
