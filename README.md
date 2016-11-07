@@ -12,6 +12,14 @@ A cli that helps you sort through the results of an OWASP ZAP scan.
 
 ### Docker installation
 
+#### Pull from the Docker Hub
+
+```
+$ docker pull adelevie/zap-analyzer
+```
+
+#### Build the Docker image locally
+
 Clone this repo and `cd` into it. Then build the image:
 
 ```
@@ -35,6 +43,14 @@ The data source for `zap-analyzer` are JSON files of OWASP ZAP output scans.
 Pipe this JSON into the `zap-cli`:
 
 ## Docker usage
+
+### Pulling from the Docker Hub
+
+```
+$ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | docker run -i adelevie/zap-analyzer
+```
+
+### After building locally
 
 ```
 $ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | docker run -i zap-analyzer
