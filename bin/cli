@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../zap_analyzer.rb'
+require 'json'
 
 def get_input_from_stdin
   input = ""
@@ -11,4 +12,6 @@ def get_input_from_stdin
   input
 end
 
-ZapAnalyzer.new(get_input_from_stdin).perform
+parsed_input = JSON.parse(get_input_from_stdin)
+
+STDOUT.puts ZapAnalyzer.new(parsed_input).perform

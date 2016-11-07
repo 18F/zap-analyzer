@@ -4,7 +4,7 @@ class ReportWriter
   end
 
   def perform
-    STDOUT.puts content
+    content
   end
 
   private
