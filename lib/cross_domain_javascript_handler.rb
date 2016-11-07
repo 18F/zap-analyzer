@@ -19,7 +19,8 @@ class CrossDomainJavascriptHandler
 
   HOST_WHITELIST = [
     'ajax.googleapis.com',
-    'dap.digitalgov.gov'
+    'dap.digitalgov.gov',
+    'ethn.io'
   ]
 
   def is_false_positive?
