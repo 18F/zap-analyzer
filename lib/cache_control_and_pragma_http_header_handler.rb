@@ -8,7 +8,7 @@ class CacheControlAndPragmaHTTPHeaderHandler
   end
 
   def perform
-    [error['id'], is_false_positive?, false_positive_explanation]
+    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}"]
   end
 
   private
@@ -21,7 +21,7 @@ class CacheControlAndPragmaHTTPHeaderHandler
     if is_false_positive?
       "This is a false positive because a 400 error page may omit the cache-control and pragma http headers."
     else
-      "This is likely not a false positive and needs to be addressed (CWE 525)"
+      "This is likely not a false positive and needs to be addressed."
     end
   end
 

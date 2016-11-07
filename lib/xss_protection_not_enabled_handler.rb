@@ -8,7 +8,7 @@ class XSSProtectionNotEnabledHandler
   end
 
   def perform
-    [error['id'], is_false_positive?, false_positive_explanation]
+    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}"]
   end
 
   private

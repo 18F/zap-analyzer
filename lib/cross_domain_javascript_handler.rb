@@ -4,14 +4,14 @@ class CrossDomainJavascriptHandler
   end
 
   def perform
-    [error['id'], is_false_positive?, false_positive_explanation]
+    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}"]
   end
 
   def false_positive_explanation
     if is_false_positive?
       "This error is a false positive because the cross domain javascript comes from the trusted host: #{host}"
     else
-      "Not a false positive"
+      "This might be a false positive. Ensure if cross-domain javascript from #{host} can be trusted."
     end
   end
 
@@ -33,6 +33,10 @@ class CrossDomainJavascriptHandler
 
   def host
     URI.parse(url).host
+  end
+
+  def cweid
+    error['cweid']
   end
 
   attr_reader :error
