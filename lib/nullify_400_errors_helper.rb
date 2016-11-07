@@ -7,9 +7,9 @@ module Nullify400ErrorsHelper
 
   def is_400?
     code = nil
-    #RestClient.get(url) do |response, request, result|
-    #  code = response.code
-    #end
+    RestClient.get(url) do |response, request, result|
+     code = response.code
+    end
 
     code = 400
 
