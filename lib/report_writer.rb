@@ -20,7 +20,7 @@ class ReportWriter
       output << "## #{explanation} \n"
       output << "\n"
       errors.each do |error|
-        output << "- Error ID: #{error[0]} \n"
+        output << "- #{error[3]} \n"
       end
       output << "\n"
       output << "\n"

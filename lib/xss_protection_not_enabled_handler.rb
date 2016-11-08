@@ -2,13 +2,14 @@ require_relative './nullify_400_errors_helper'
 
 class XSSProtectionNotEnabledHandler
   include Nullify400ErrorsHelper
+  include HandlerHelper
 
   def initialize(error)
     @error = error
   end
 
   def perform
-    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}"]
+    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}", summary]
   end
 
   private

@@ -1,10 +1,12 @@
 class CrossDomainJavascriptHandler
+  include HandlerHelper
+
   def initialize(error)
     @error = error
   end
 
   def perform
-    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}"]
+    [error['id'], is_false_positive?, "CWE #{cweid} #{false_positive_explanation}", summary]
   end
 
   def false_positive_explanation
@@ -27,12 +29,12 @@ class CrossDomainJavascriptHandler
     HOST_WHITELIST.include? host
   end
 
-  def url
+  def param
     error['param']
   end
 
   def host
-    URI.parse(url).host
+    URI.parse(param).host
   end
 
   def cweid

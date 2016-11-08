@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:35:50 GMT
+      - Tue, 08 Nov 2016 19:51:07 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -32,13 +32,13 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - 57962314-2711-4d68-9399-f9c663ac758b
+      - ee2e29a4-0b8c-4ebf-ba42-7c2cd9247f15
       X-Runtime:
-      - '0.005012'
+      - '0.003603'
       X-Vcap-Request-Id:
-      - 426217e3-a773-43c7-5419-f0383b4d3fe6
-      Content-Length:
-      - '115'
+      - a66b620c-67e1-4df1-4391-907405e80ba5
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -48,7 +48,7 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:35:50 GMT
+  recorded_at: Tue, 08 Nov 2016 19:51:07 GMT
 - request:
     method: get
     uri: https://micropurchase.18f.gov/sitemap.xml
@@ -72,7 +72,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:35:50 GMT
+      - Tue, 08 Nov 2016 19:51:07 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -81,11 +81,11 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - 0c5e5a83-3943-47ac-8ca4-f586bc2037b6
+      - 835421ab-fe3f-40c5-9e21-19fe0512da2a
       X-Runtime:
-      - '0.004851'
+      - '0.003761'
       X-Vcap-Request-Id:
-      - 726de47a-64f3-4837-676e-ddefe57d8f70
+      - 8ae0d3a5-39b2-4c2f-4acd-f83d2fc9dd2d
       Content-Length:
       - '115'
       Connection:
@@ -97,5 +97,5 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:35:50 GMT
+  recorded_at: Tue, 08 Nov 2016 19:51:07 GMT
 recorded_with: VCR 3.0.3

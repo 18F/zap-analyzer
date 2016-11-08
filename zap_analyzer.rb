@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'pry'
 
+require_relative './lib/handler_helper'
 require_relative './lib/null_handler'
 require_relative './lib/handler_factory'
 require_relative './lib/cross_domain_javascript_handler'
