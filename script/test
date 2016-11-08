@@ -1,5 +1,7 @@
 DOCKER_TAG=zap-analyzer
 
+echo "Building and testing ${DOCKER_TAG}"
+
 docker build -t $DOCKER_TAG .
 
 docker run \

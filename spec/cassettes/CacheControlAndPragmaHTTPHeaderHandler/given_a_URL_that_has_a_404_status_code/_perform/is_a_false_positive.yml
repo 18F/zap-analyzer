@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:22:53 GMT
+      - Tue, 08 Nov 2016 18:35:49 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -32,11 +32,11 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - cf122260-36e2-47c5-8d7d-762872fac4eb
+      - a5190004-459d-45c9-8014-3b92dddbc299
       X-Runtime:
-      - '0.004116'
+      - '0.004051'
       X-Vcap-Request-Id:
-      - 25fd2e6a-5e24-4e43-63d0-d4baacfba726
+      - 8aa849a3-8a0a-4e86-6065-171ac46ffc20
       Content-Length:
       - '115'
       Connection:
@@ -48,7 +48,7 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:22:53 GMT
+  recorded_at: Tue, 08 Nov 2016 18:35:49 GMT
 - request:
     method: get
     uri: https://micropurchase.18f.gov/faq
@@ -72,7 +72,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:22:54 GMT
+      - Tue, 08 Nov 2016 18:35:50 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -81,11 +81,11 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - 0ff78833-22fa-417b-9cd2-f25ff048d5e7
+      - 83d9c081-6ccd-411e-9b80-af0174f7a20a
       X-Runtime:
-      - '0.003465'
+      - '0.004061'
       X-Vcap-Request-Id:
-      - 3011bedd-6f4f-44ba-4a0b-81dbece9afed
+      - 4ccf0832-8964-4cf4-4036-be41fce74902
       Content-Length:
       - '115'
       Connection:
@@ -97,5 +97,5 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:22:54 GMT
+  recorded_at: Tue, 08 Nov 2016 18:35:50 GMT
 recorded_with: VCR 3.0.3
