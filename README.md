@@ -74,16 +74,10 @@ $ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=js
 
 ### Docker
 
-To build the image:
-
-```
-$ docker build -t zap-analyzer .
-```
-
 To run tests:
 
 ```
-$ docker run -it --rm zap-analyzer bundle exec rspec
+$ ./script/test
 ```
 
 ### Ruby

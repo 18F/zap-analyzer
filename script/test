@@ -1,0 +1,9 @@
+DOCKER_TAG=zap-analyzer
+
+docker build -t $DOCKER_TAG .
+
+docker run \
+  -it \
+  -v $(pwd)/spec/cassettes:/app/spec/cassettes \
+  $DOCKER_TAG \
+  bundle exec rspec
