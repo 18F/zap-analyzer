@@ -47,19 +47,19 @@ Pipe this JSON into the `zap-cli`:
 ### Pulling from the Docker Hub
 
 ```
-$ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | docker run -i adelevie/zap-analyzer
+$ curl 'https://compliance-viewer.18f.gov/results/micropurchase/current?format=json' | docker run -i adelevie/zap-analyzer
 ```
 
 ### After building locally
 
 ```
-$ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | docker run -i zap-analyzer
+$ curl 'https://compliance-viewer.18f.gov/results/micropurchase/current?format=json' | docker run -i zap-analyzer
 ```
 
 If you want to write the report to a file:
 
 ```
-$ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | docker run -i zap-analyzer > report.md
+$ curl 'https://compliance-viewer.18f.gov/results/micropurchase/current?format=json' | docker run -i zap-analyzer > report.md
 ```
 
 ## Ruby usage
@@ -67,7 +67,7 @@ $ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=js
 From the root of the `zap-analyzer` project folder:
 
 ```
-$ curl https://compliance-viewer.18f.gov/results/micropurchase/current?format=json | bin/cli
+$ curl 'https://compliance-viewer.18f.gov/results/micropurchase/current?format=json' | bin/cli
 ```
 
 ## Public domain
