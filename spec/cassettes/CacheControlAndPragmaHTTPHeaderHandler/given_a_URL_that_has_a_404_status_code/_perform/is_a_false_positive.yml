@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:35:49 GMT
+      - Tue, 08 Nov 2016 19:51:06 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -32,13 +32,13 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - a5190004-459d-45c9-8014-3b92dddbc299
+      - f839ad3e-9430-4a84-96da-467e8c875ff4
       X-Runtime:
-      - '0.004051'
+      - '0.004171'
       X-Vcap-Request-Id:
-      - 8aa849a3-8a0a-4e86-6065-171ac46ffc20
-      Content-Length:
-      - '115'
+      - ae74bacc-b607-49ca-5ef0-941eeb5dc35e
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -48,7 +48,7 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:35:49 GMT
+  recorded_at: Tue, 08 Nov 2016 19:51:06 GMT
 - request:
     method: get
     uri: https://micropurchase.18f.gov/faq
@@ -72,7 +72,7 @@ http_interactions:
       Content-Type:
       - application/xml; charset=utf-8
       Date:
-      - Tue, 08 Nov 2016 18:35:50 GMT
+      - Tue, 08 Nov 2016 19:51:06 GMT
       Server:
       - nginx
       Strict-Transport-Security:
@@ -81,11 +81,11 @@ http_interactions:
       - Accept-Encoding
       - Origin
       X-Request-Id:
-      - 83d9c081-6ccd-411e-9b80-af0174f7a20a
+      - 3a98e226-a598-4534-8b7f-162fcfb74847
       X-Runtime:
-      - '0.004061'
+      - '0.005289'
       X-Vcap-Request-Id:
-      - 4ccf0832-8964-4cf4-4036-be41fce74902
+      - 463f1428-7621-43d5-6362-e75ff84b565a
       Content-Length:
       - '115'
       Connection:
@@ -97,5 +97,5 @@ http_interactions:
         ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
         NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
     http_version: 
-  recorded_at: Tue, 08 Nov 2016 18:35:50 GMT
+  recorded_at: Tue, 08 Nov 2016 19:51:06 GMT
 recorded_with: VCR 3.0.3
