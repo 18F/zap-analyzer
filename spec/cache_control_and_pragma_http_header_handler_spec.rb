@@ -1,7 +1,8 @@
 require 'spec_helper'
 
-describe CacheControlAndPragmaHTTPHeaderHandler do
+describe CacheControlAndPragmaHTTPHeaderHandler, vcr: {record: :all} do
   context 'given a URL that has a 200 status code' do
+
     describe '#perform' do
       it 'is not a false positive' do
         error = {
@@ -31,6 +32,7 @@ describe CacheControlAndPragmaHTTPHeaderHandler do
   end
 
   context 'given a URL that has a 404 status code' do
+
     describe '#perform' do
       it 'is a false positive' do
         error = {

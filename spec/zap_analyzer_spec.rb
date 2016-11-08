@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe ZapAnalyzer do
-  describe '#perform' do
+  describe '#perform', vcr: {record: :all} do
     it 'should generate a report' do
       raw_data = File.read('spec/data/scan-short.json')
       errors = JSON.parse(raw_data)
