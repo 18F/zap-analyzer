@@ -8,4 +8,4 @@ ADD Gemfile.lock /app/Gemfile.lock
 RUN bundle install
 
 ADD . /app
-ENTRYPOINT bin/cli
+CMD bin/cli
