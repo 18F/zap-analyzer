@@ -1,6 +1,5 @@
 require 'bundler/setup'
 require 'pry'
-require 'json'
 
 require_relative './lib/null_handler'
 require_relative './lib/handler_factory'
@@ -12,8 +11,8 @@ require_relative './lib/xss_protection_not_enabled_handler'
 require_relative './lib/report_writer'
 
 class ZapAnalyzer
-  def initialize(json_string)
-    @errors = JSON.parse(json_string)
+  def initialize(errors)
+    @errors = errors
   end
 
   def perform

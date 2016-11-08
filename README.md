@@ -70,6 +70,24 @@ From the root of the `zap-analyzer` project folder:
 $ curl 'https://compliance-viewer.18f.gov/results/micropurchase/current?format=json' | bin/cli
 ```
 
+## Development
+
+### Docker
+
+To run tests:
+
+```
+$ ./script/test
+```
+
+### Ruby
+
+To run tests:
+
+```
+$ bundle exec rspec
+```
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):

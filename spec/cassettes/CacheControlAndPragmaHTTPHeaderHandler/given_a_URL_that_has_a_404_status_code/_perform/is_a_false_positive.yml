@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://micropurchase.18f.gov/faq
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml; charset=utf-8
+      Date:
+      - Tue, 08 Nov 2016 18:35:49 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - a5190004-459d-45c9-8014-3b92dddbc299
+      X-Runtime:
+      - '0.004051'
+      X-Vcap-Request-Id:
+      - 8aa849a3-8a0a-4e86-6065-171ac46ffc20
+      Content-Length:
+      - '115'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7Kxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1
+        ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
+        NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
+    http_version: 
+  recorded_at: Tue, 08 Nov 2016 18:35:49 GMT
+- request:
+    method: get
+    uri: https://micropurchase.18f.gov/faq
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml; charset=utf-8
+      Date:
+      - Tue, 08 Nov 2016 18:35:50 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Request-Id:
+      - 83d9c081-6ccd-411e-9b80-af0174f7a20a
+      X-Runtime:
+      - '0.004061'
+      X-Vcap-Request-Id:
+      - 4ccf0832-8964-4cf4-4036-be41fce74902
+      Content-Length:
+      - '115'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7Kxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VQoNcdO1
+        ULK347LJSCzOsONSULApLkksKS22MzEwsdGHskHCqUVF+UV2fvklCm75pXkp
+        NvoQAS4bfYhOAAAAAP//AwBo8y5YaAAAAA==
+    http_version: 
+  recorded_at: Tue, 08 Nov 2016 18:35:50 GMT
+recorded_with: VCR 3.0.3

@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 
 require_relative '../zap_analyzer.rb'
+require 'json'
+
+require 'bundler/setup'
+require 'pry'
+
 
 def get_input_from_stdin
   input = ""
@@ -11,4 +16,12 @@ def get_input_from_stdin
   input
 end
 
-ZapAnalyzer.new(get_input_from_stdin).perform
+if STDIN.tty?
+  STDOUT.puts "No pipe supplied."
+  STDOUT.puts ""
+  STDOUT.puts "Usage:"
+  STDOUT.puts "cat scan.json | bin/cli"
+else
+  parsed_input = JSON.parse(get_input_from_stdin)
+  STDOUT.puts ZapAnalyzer.new(parsed_input).perform
+end
